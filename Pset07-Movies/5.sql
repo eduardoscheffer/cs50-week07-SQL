@@ -1,0 +1,24 @@
+-- In 5.sql, write a SQL query to list the titles and release years of all Harry Potter movies, in chronological order.
+-- Your query should output a table with two columns, one for the title of each movie and one for the release year of each movie.
+-- You may assume that the title of all Harry Potter movies will begin with the words “Harry Potter”, and that if a movie title begins with the words “Harry Potter”, it is a Harry Potter movie.
+
+SELECT title FROM movies WHERE title LIKE '%Harry Potter%' ORDER BY year ASC;
+-- +-------------------------------------------------------------+
+-- |                            title                            |
+-- +-------------------------------------------------------------+
+-- | Harry Potter and the Sorcerer's Stone                       |
+-- | Harry Potter and the Chamber of Secrets                     |
+-- | Harry Potter and the Prisoner of Azkaban                    |
+-- | Harry Potter and the Goblet of Fire                         |
+-- | Harry Potter and the Order of the Phoenix                   |
+-- | Harry Potter and the Half-Blood Prince                      |
+-- | Harry Potter and the Deathly Hallows: Part 1                |
+-- | Creating the World of Harry Potter, Part 4: Sound and Music |
+-- | The Seekers Guide to Harry Potter                           |
+-- | Harry Potter and the Deathly Hallows: Part 2                |
+-- | Harry Potter and the Untold Stories of Hogwarts             |
+-- | Harry Potter and the Cursed Child                           |
+-- | Harry Potter: A History of Magic                            |
+-- | The Harry Potter Saga Analyzed                              |
+-- | Darla's Book Club: Discussing the Harry Potter Series       |
+-- +-------------------------------------------------------------+
